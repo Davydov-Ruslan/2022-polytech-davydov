@@ -4,4 +4,4 @@ Asymptotic complexity of algorithms:
 |-----------------| Quicksort-- | Selection sort-|  
 | Worst-case---| $O(n^2)$------| $O(n^2)$-------|  
 | Best-case----| $O(n\log{n})$-| $O(n^2)$-------|  
-| Average-case-| $O(n\log{n})$-| $O(n^2)$-------|  
+| Average-case-| $O(n\log{n})$-| $O(n^2)$-------| ::q::q:q
