@@ -1,0 +1,7 @@
+-O0 size:00002d08
+-O1 size:00002cb8
+-O2 size:00002cd8
+-O3 size:00002cd8
+-Og size:00002cc8
+-Os size:00002c88
+-Ofast size:00002d7c
