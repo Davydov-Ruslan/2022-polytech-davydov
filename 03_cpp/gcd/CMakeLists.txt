@@ -1,6 +1,5 @@
 cmake_minimum_required(VERSION 3.1...3.24)
-project(calculator
+project(gcd
         VERSION 1.0
         LANGUAGES CXX)
-add_executable(calculator main.cpp
-        ../gcd/main.cpp)
+add_executable(gcd main.cpp)
