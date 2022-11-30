@@ -1,17 +1,20 @@
 #include <iostream>
 #include "calculator.h"
 
+using namespace std;
+
 int main()
 {
     double a, b, result;
     char $;
-    std::cout << "Calculator\n Enter operations in a$b format\n";
+    cout << "Calculator\n Enter operations in a$b format\n";
     while(true)
     {
-        std::cin >> a >> $ >> b;
+        cin >> a >> $ >> b;
         result = calculate(a, $, b);
-        std::cout << a << $ << b << "=" << result << std::endl;
+        cout << a << $ << b << "=" << result << endl;
     }
+    
     return 0;
 
 }
