@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/vladislav/cs/2022-polytech-brazda/02_compiler
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vladislav/cs/2022-polytech-brazda
+CMAKE_BINARY_DIR = /home/vladislav/cs/2022-polytech-brazda/02_compiler
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vladislav/cs/2022-polytech-brazda/CMakeFiles /home/vladislav/cs/2022-polytech-brazda//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vladislav/cs/2022-polytech-brazda/02_compiler/CMakeFiles /home/vladislav/cs/2022-polytech-brazda/02_compiler//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vladislav/cs/2022-polytech-brazda/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vladislav/cs/2022-polytech-brazda/02_compiler/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -129,6 +129,30 @@ hello_world/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_world.dir/build.make CMakeFiles/hello_world.dir/build
 .PHONY : hello_world/fast
 
+func.o: func.cpp.o
+.PHONY : func.o
+
+# target to build an object file
+func.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_world.dir/build.make CMakeFiles/hello_world.dir/func.cpp.o
+.PHONY : func.cpp.o
+
+func.i: func.cpp.i
+.PHONY : func.i
+
+# target to preprocess a source file
+func.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_world.dir/build.make CMakeFiles/hello_world.dir/func.cpp.i
+.PHONY : func.cpp.i
+
+func.s: func.cpp.s
+.PHONY : func.s
+
+# target to generate assembly for a file
+func.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_world.dir/build.make CMakeFiles/hello_world.dir/func.cpp.s
+.PHONY : func.cpp.s
+
 hello_world.o: hello_world.cpp.o
 .PHONY : hello_world.o
 
@@ -162,6 +186,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... hello_world"
+	@echo "... func.o"
+	@echo "... func.i"
+	@echo "... func.s"
 	@echo "... hello_world.o"
 	@echo "... hello_world.i"
 	@echo "... hello_world.s"
